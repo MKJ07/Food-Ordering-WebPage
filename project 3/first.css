@@ -1,0 +1,25 @@
+.list{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 2px;
+    text-decoration: none;
+    margin: 2px 2px;
+    padding: 2px 2px;
+
+}
+.navbar{
+    background-color: rgb(66, 66, 6);
+    border: 2px solid black;
+    height: 50px;
+}
+.second li{
+    display: flex;
+    position: absolute;
+    top: 23px;
+    right: 70px;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    border: 2px solid black;
+    border-radius: 5px;
+}

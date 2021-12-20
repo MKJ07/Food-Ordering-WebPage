@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    position: absolute;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(160, 131, 131);
+    margin: top 4px; ;
+   
+    position: sticky;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    opacity: 0.1px;
+}
+#logo {
+    margin: 10px 3px;
+
+}
+#logo img{
+    border-radius: 20px;
+    height: 50px;
+    margin: 4px 3px;
+    width: 50px;
+    height: 50px;
+
+}
+#navbar ul{
+    display: flex;
+    margin-left: -20px;
+}
+#navbar ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 12px;
+    width: 67px;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+
+
+}
+#navbar ul li a{
+    display: block;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    margin: 10px 5px;
+    padding: 3px 10px;
+    text-decoration: none;
+
+}
+#navbar li a:hover{
+    color: rgb(243, 8, 8);
+    background-color: white;
+    display: block;
+    margin: 10px 5px;
+    padding: 3px 10px;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* padding: 3px 200px; */
+    height: 439px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    background: url(img/background\ 1.jpg) no-repeat center center/cover;
+    height: 400px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.91;
+}
+.h1-primary{
+    text-decoration-color: white;
+    color: white;
+    position: absolute;
+    margin-top: -157px;
+    width: 346px;
+    font-size: 1.8rem;
+    text-size-adjust: 2;
+    padding: 32px;
+}
+p{
+    color: white;
+    position: absolute;
+    margin-left: 27px;
+
+    font-size: 13px;
+}
+.btn{
+    padding: 6px 20px;
+    position: absolute;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin-top: 197px;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+}
+/* services */
+#services-container{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding: 2px 5px;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#services{
+    display: flex;
+    /* flex-direction:column; */
+    flex-wrap: wrap;
+    margin: 1rem;
+    /* border: 2px solid black; */
+    height: 300px;
+    width: 100%;
+}
+#services .box{
+    color: white;
+    background-color: rgb(192, 161, 161);
+    /* border: 2px solid brown; */
+    padding: 8px;
+    width: 110px;
+    height: 130px;
+    margin: 3px 2px;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 10px;   
+}
+#services .box img{
+    display: inline-block;
+    border-radius: 2px;
+    margin: 12px;
+    width: 90px;
+    height: 57px;
+    box-shadow: -2px 2px 11px 12px rgb(58 63 58);
+    cursor: pointer;
+}
+#services .box img:hover{
+    width: 50px;
+    height: 20px;
+}
+
+/* utility */
+.h-primary{
+    font-size: 1.8rem;
+    position: relative;
+    top: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+.h-secondary{
+    font-size: 1.0rem;
+    padding: 2px;
+    margin: 2px 2px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+.box p{
+    display: none;
+  
+}
+/* clients */
+.Clients{
+    position: relative;
+    top: 80px;
+    height: 216px;
+   
+}
+.clients::before{
+    content: "";
+    position: absolute;
+    background: url(img/background\ 4.jpg) no-
+    repeat center center/cover;
+    height: 180px;
+    top: 15px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+.Clients h1{
+    font-size: 1.8rem;
+    text-align: center;
+    /* padding: 12px; */
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* .Clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.clients{
+    
+    display: table-row-group;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* padding: 3px 200px; */
+    height: 215px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+
+    
+} 
+.clients img{
+    display: inline-block;
+    border-radius: 11px;
+    margin: 20px;
+    width: 56px;
+    height: 49px;
+    box-shadow: -2px 2px 18px 10px rgb(0 0 0);
+}
+.clients img:hover{
+    width: 130px;
+    height: 130px;
+
+}
+.Contact{
+    position: relative;
+    height: 371px;
+    margin-top: 64px;
+}
+.Contact h1{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.Contact::before{
+    content: "";
+    position: absolute;
+    background: url(img/contact-us-4193523__340\ 2.webp) no-repeat center center/cover;
+    height: 311px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    position: relative;
+    font-size: 12px;
+    /* margin: -4px 119px; */
+    /* padding: 1px 51px; */
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.place{
+    background-color: rgb(185, 153, 153);
+    border-radius: 15px;
+    margin: 8px -24px;
+    font-size: 9px;
+    padding: 7px 36px;
+}
+.input label{
+    font-size: 10px;
+}
+.btnc{
+    padding: 0px 4px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 7px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+}
+.foot{
+    
+    position: relative;
+    display: flex;
+    background-color: black;
+    margin: -60px -1px;
+    /* margin-right: -7px;
+    margin-bottom: -13px; */
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /* padding: -4px 0px; */
+}
+.copyright{
+    margin-top: 20px;
+}
+.social{
+    margin-left: 20px;
+}
+.social img{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 28px 2px;
+    padding: 2px 4px;
+    /* justify-content: center; */
+}
+    
+
+    
